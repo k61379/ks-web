@@ -16,17 +16,12 @@ public class IndexController {
     private SkillRepository skillRepository;
     private WorkRepository workRepository;
 
-    public IndexController(PersonRepository personRepository) {
+    public IndexController(PersonRepository personRepository,SocialMediaRepository socialMediaRepository,InterestsRepository interestsRepository,SkillRepository skillRepository,WorkRepository workRepository) {
+
         this.personRepository = personRepository;
-    }
-    public IndexController(SocialMediaRepository socialMediaRepository) {
         this.socialMediaRepository= socialMediaRepository;
-    }
-    public IndexController(InterestsRepository interestsRepository) {
         this.interestsRepository= interestsRepository;
-    }
-    public IndexController(SkillRepository skillRepository) { this.skillRepository= skillRepository; }
-    public IndexController(WorkRepository workRepository) {
+        this.skillRepository= skillRepository;
         this.workRepository= workRepository;
     }
 
