@@ -8,28 +8,37 @@ import javax.persistence.Id;
 public class Interests {
     @Id
     @GeneratedValue
-    private String sleep;
+    private Long id;
+    private String name;
     private String game;
     public Interests(){}
 
-    public Interests(String sleep, String game) {
-        this.sleep = sleep;
-        this.game = game;
+    public Interests( String name,String game) {
+        this.game=game;
+        this.name = name;
+    }
+    public String getName(){
+        return name;
     }
 
-    public String getSleep() {
-        return sleep;
+    public void setName(){
+        this.name = name;
     }
-
-    public void setSleep(String sleep) {
-        this.sleep = sleep;
-    }
-    public String getGame() {
+    public String getGame(){
         return game;
     }
 
-    public void setGame(String game) {
-        this.sleep = game;
+    public void setGame(){
+        this.game = game;
     }
+
+    public Long getId(){
+        return id;
+    }
+
+    public void setId(Long id){
+        this.id = id;
+    }
+
 }
 

@@ -8,6 +8,7 @@ import javax.persistence.Id;
 public class Work {
     @Id
     @GeneratedValue
+    private Long id;
     private String position;
     private String company;
     private String time;
@@ -49,6 +50,13 @@ public class Work {
 
     public void setDesc(String desc) {
         this.desc = desc;
+    }
+    public Long getId(){
+        return id;
+    }
+
+    public void setId(Long id){
+        this.id = id;
     }
 
 }

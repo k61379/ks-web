@@ -8,6 +8,7 @@ import javax.persistence.Id;
 public class Skill {
     @Id
     @GeneratedValue
+    private Long id;
     private String name;
     private Integer grade;
 
@@ -31,5 +32,12 @@ public class Skill {
 
     public void setGrade(Integer grade) {
         this.grade = grade;
+    }
+    public Long getId(){
+        return id;
+    }
+
+    public void setId(Long id){
+        this.id = id;
     }
 }

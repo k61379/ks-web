@@ -8,6 +8,7 @@ import javax.persistence.Id;
 public class SocialMedia {
     @Id
     @GeneratedValue
+    private Long id;
     private String github;
     private String facebook;
     public SocialMedia(){}
@@ -28,6 +29,13 @@ public class SocialMedia {
 
     public void setFacebook(String facebook) {
         this.github = github;
+    }
+    public Long getId(){
+        return id;
+    }
+
+    public void setId(Long id){
+        this.id = id;
     }
 
 }
