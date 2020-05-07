@@ -2,10 +2,11 @@ package com.kimjiyeung.app.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 @Entity
 public class Work {
-
+    @Id
     @GeneratedValue
     private String position;
     private String company;

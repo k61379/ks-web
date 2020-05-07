@@ -2,9 +2,11 @@ package com.kimjiyeung.app.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 @Entity
 public class Interests {
+    @Id
     @GeneratedValue
     private String sleep;
     private String game;

@@ -2,10 +2,11 @@ package com.kimjiyeung.app.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 @Entity
 public class SocialMedia {
-
+    @Id
     @GeneratedValue
     private String github;
     private String facebook;

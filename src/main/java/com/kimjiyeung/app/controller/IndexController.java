@@ -1,6 +1,14 @@
 package com.kimjiyeung.app.controller;
-import com.kimjiyeung.app.entity.*;
-import com.kimjiyeung.app.repository.*;
+import com.kimjiyeung.app.entity.Interests;
+import com.kimjiyeung.app.entity.Person;
+import com.kimjiyeung.app.entity.Skill;
+import com.kimjiyeung.app.entity.SocialMedia;
+import com.kimjiyeung.app.entity.Work;
+import com.kimjiyeung.app.repository.InterestsRepository;
+import com.kimjiyeung.app.repository.PersonRepository;
+import com.kimjiyeung.app.repository.SkillRepository;
+import com.kimjiyeung.app.repository.SocialMediaRepository;
+import com.kimjiyeung.app.repository.WorkRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

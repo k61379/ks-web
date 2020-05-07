@@ -2,9 +2,11 @@ package com.kimjiyeung.app.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 @Entity
 public class Skill {
+    @Id
     @GeneratedValue
     private String name;
     private Integer grade;
